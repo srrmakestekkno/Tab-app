@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="./script.js" defer></script>
+    <title>Tabs</title>
+  </head>
+  <body>
+    <div id="buttons"></div>
+    <div id="content" class="tab-content">
+      <h4 id="tab-content-title"></h4>
+      <p id="tab-text"></p>
+      <div class="tab-actions">
+        <button id="hide-text" onclick="hideText()"></button>
+        <div class="hearts-container">
+          <span id="count"></span>
+          <span>💝</span>
+          <button onclick="incrementCount(this)">+</button>
+          <button onclick="incrementCount(this)">+++</button>
+        </div>
+      </div>
+      <div class="undo">
+        <button onclick="undo(this)">Undo</button>
+        <button onclick="undo(this)">Undo 2s</button>
+      </div>
+    </div>
+  </body>
+</html>
